@@ -1,4 +1,6 @@
 // pages/subscribe.js
+require("dotenv").config();
+
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import SubscriptionForm from "../components/SubscriptionForm";

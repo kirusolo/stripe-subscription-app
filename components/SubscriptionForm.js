@@ -1,4 +1,3 @@
-// components/PaymentForm.js
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import React, { useState } from "react";
 import axios from "axios";
@@ -22,7 +21,7 @@ function PaymentForm() {
         paymentMethod: paymentMethod.paymentMethod.id,
       });
 
-      if (response.data.message === "Subscription successful!") {
+      if (response.data.message === "Subscription successfully initiated") {
         alert("Payment Successful! Subscription active.");
       } else {
         alert("Payment unsuccessful! Please try again.");
