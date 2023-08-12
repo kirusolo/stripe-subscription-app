@@ -12,7 +12,10 @@ const stripePromise = loadStripe(
 function Subscribe() {
   return (
     <div>
-      <h1>Subscribe to Premium</h1>
+      <h1 style={{ textAlign: "center", color: "#FF0000" }}>
+        Subscribe to Premium
+      </h1>
+
       <Elements stripe={stripePromise}>
         <SubscriptionForm />
       </Elements>
